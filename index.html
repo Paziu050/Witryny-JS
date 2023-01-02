@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="console.js" defer></script> 
+</head>
+<body>
+    <p>
+        <button id="alertTest" type="button"> Okienko Alert</button>
+    </p>
+    <script>
+        function oknoAlert() {
+            alert("MAsakra");
+        }
+        document.querySelector("#alertTest").addEventListener("click", () => {
+            oknoAlert();
+        });
+    </script>
+    <p>
+        <button id="confirmTest" type="button"> Okienko Confirm</button>
+    </p>
+    <script>
+        function oknoConfirm() {
+            if (confirm("Czy jesteś pewien, że chcesz kontynuować?")) {
+                alert("No to kontynuuj...");
+            }else{
+                alert("Przykro mi, że nie chcesz kontynuować...");
+            }
+         }
+        document.querySelector("$confirmTest").addEventListener("click", () => {
+            oknoConfirm()
+        });
+    </script>
+    
+</body>
+</html>
