@@ -1,0 +1,32 @@
+const bbbb = document.querySelector("header");
+bbbb.style.backgroundColor = "yellow";
+
+
+
+const aaaa = document.querySelector("header h1");
+console.log(aaaa);
+aaaa.style.fontFamily = "Arial Black";
+aaaa.innerHTML = "preambuła";
+
+
+const cccc = document.querySelectorAll("section");
+for (const sec of cccc) {
+    sec.style.border ="2px solid brown";
+}
+
+
+const dddd = document.querySelector("section.main_column h1");
+console.log(dddd);
+dddd.innerText = "Specjalność szefa:";
+
+
+const paragraf = document.createElement("p");
+paragraf.innerText = "Kebab na frytkach"
+const kolumna = document.querySelector(".main_column");
+console.log(paragraf);
+console.log(kolumna);
+kolumna.appendChild(paragraf);
+
+const usun = document.querySelectorAll("section.side_column h1");
+console.log({usun});
+usun[1].remove()
