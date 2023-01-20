@@ -1,0 +1,49 @@
+
+// 20.01
+
+const przycisk = document.querySelector("#uniq");
+console.log(przycisk);
+function zderzak() {alert("Możesz być z siebie dumny");
+}
+przycisk.addEventListener('click',()=>{
+    zderzak();
+})
+
+const superr = document.querySelector("#super");
+console.log(superr);
+function essa() {confirm("Czy jesteś pewien że chcesz kontynuować?");
+}
+superr.addEventListener('click',()=>{
+    essa();
+})
+let krowaa = confirm("Czy jesteś pewien że chcesz kontynuować?");
+
+function krowa() {
+    let byk=confirm('Czy jesteś pewien że chcesz kontynuować?');
+    if(byk)
+{
+    alert('No to kontynuuj...');
+}
+else
+{
+    alert('Przykro mi że nie chcesz kontynuować...');
+}
+}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="oknadialogowe.js" defer></script>
+</head>
+<body>
+    <button onclick="alert('To jest właśnie proste wywołanie okna alert.')">Proste wywołanie okna alert</button>
+    <button id="uniq">Wywołanie okna alert poprzez nasłuchiwanie zdarzenia na tym elemencie.</button>
+    <button id="super">Wywołanie okna confirm</button>
+</body>
+</html>
