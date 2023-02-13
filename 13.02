@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 4</title>
+</head>
+<body>
+    <p onclick="alert('jest piękny')">Artur</p>
+    <div><textarea onfocus="this.style.backgroundColor='yellow'">Wiem co sie dzieje</textarea></div>
+    <p><input type="text" onblur="this.value = this.value.toUpperCase()"></p>
+    <p><select onchange=" this.style.color =this.value">
+        <option>black</option>
+        <option>brown</option>
+        <option>blue</option>
+        <option>blueviolet</option>
+        <option>burlywood</option>
+        <option>bisque</option> 
+    </select></p>
+    <p onclick="this.style.fontSize='xx-large'" ondblclick="this.style.fontSize='medium'">ello</p>
+    <div><img src="yo.jpg" oncontextmenu="alert(this.src)"></div>
+    <div>
+        <input type="text" onkeyup="document.getElementById('sima').innerText=this.value" id="text">
+        <p id="sima"></p>
+    </div>
+    <h1 style="color: green" onmouseout="this.style.textShadow:'2px 2px 5px green'" onmouseover="">bdhfdsf</h1>
+</body>
+</html>
