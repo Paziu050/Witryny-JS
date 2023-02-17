@@ -25,6 +25,6 @@
         <p id="sima"></p>
     </div>
     <h1 style="color:green"onmouseout="this.style.textShadow = '2px 2px 5px green';" 
-    onmouseover="this.style.textShadow:'0px 0px 0px green';">bdhfdsf</h1>
+    onmouseover="this.style.textShadow='0px 0px 0px green';">bdhfdsf</h1>
 </body>
 </html>
