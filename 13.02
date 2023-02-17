@@ -24,7 +24,7 @@
         <input type="text" onkeyup="document.getElementById('sima').innerText=this.value" id="text">
         <p id="sima"></p>
     </div>
-    <h1 style="color:green"onmouseout="this.style.textShadow = '2px 2px 5px green';" 
-    onmouseover="this.style.textShadow='0px 0px 0px green';">bdhfdsf</h1>
+    <h1 style="color:green"onmouseout="this.style.textShadow = '0px 0px 0px green';" 
+    onmouseover="this.style.textShadow='2px 2px 5px green';">bdhfdsf</h1>
 </body>
 </html>
