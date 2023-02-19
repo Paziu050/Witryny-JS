@@ -1,17 +1,13 @@
 document.querySelector('#przycisk').addEventListener('click',
 function(){
-
 const haszes = document.querySelector('h6');
 haszes.innerHTML = "<i>Świetnie<i>";
 })
-
 document.querySelector('#przycisk2').addEventListener('click',
 function(){
 const hapie = document.querySelector('h5');
 hapie.innerText = "<i>Świetnie<i>";
 })
-
-
 document.querySelector('#przycisk3').addEventListener('click',
 function(){
 const diwyy = document.querySelector('#dobradobra');
@@ -23,11 +19,14 @@ for (const kox of elementy){
     kox.style.border="10px dotted green";
    }
 }})
-
-document.querySelector('#przycisk4').addEventListener('click',
+document.querySelector("#przycisk4").addEventListener("click",
 function(){
-    const peee = document.querySelector('#ESSA');
-    console.log(peee);
-    
-}
-)
+    const peee=document.querySelector('#herbata').getAttribute('title');
+    alert(peee);
+})
+document.querySelector("#przycisk5").addEventListener("click", 
+function(){
+        const kawa=document.querySelector("#greentea");
+        console.log(kawa);
+        kawa.setAttribute("dir","rtl");
+})
