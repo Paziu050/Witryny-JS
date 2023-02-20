@@ -1,0 +1,60 @@
+1.
+
+document.querySelector('#przycisk').addEventListener('click',
+function(){
+const haszes = document.querySelector('h6');
+haszes.innerHTML = "<i>Świetnie<i>";
+})
+
+
+2.
+document.querySelector('#przycisk2').addEventListener('click',
+function(){
+const hapie = document.querySelector('h5');
+hapie.innerText = "<i>Świetnie<i>";
+})
+
+3.
+document.querySelector('#przycisk3').addEventListener('click',
+function(){
+const diwyy = document.querySelector('#dobradobra');
+console.log(diwyy);
+const elementy = diwyy.querySelectorAll('*');
+console.log(elementy);
+for (const kox of elementy){
+    if (kox.tagName=='STRONG'){
+    kox.style.border="10px dotted green";
+   }
+}})
+
+
+
+4.
+document.querySelector("#przycisk4").addEventListener("click",
+function(){
+    const peee=document.querySelector('#herbata').getAttribute('title');
+    alert(peee);
+})
+
+
+
+5.
+document.querySelector("#przycisk5").addEventListener("click", 
+function(){
+        const kawa=document.querySelector("#greentea");
+        console.log(kawa);
+        kawa.setAttribute("dir","rtl");
+})
+
+6.
+document.querySelector("#przycisk6").addEventListener("click",
+function(){
+    const giro=document.querySelector("#inpucik");
+    console.log(giro);
+    giro.toggleAttribute('disabled')
+    if (giro.hasAttribute('disabled')){
+    giro.toggleAttribute("enabled");
+    
+}
+}
+);
