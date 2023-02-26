@@ -47,14 +47,33 @@ function(){
 })
 
 6.
-document.querySelector("#przycisk6").addEventListener("click",
-function(){
-    const giro=document.querySelector("#inpucik");
-    console.log(giro);
-    giro.toggleAttribute('disabled')
-    if (giro.hasAttribute('disabled')){
-    giro.toggleAttribute("enabled");
-    
-}
+document.querySelector("#ford").addEventListener("click", function () {
+    const giro = document.querySelector("#inpucik");
+    giro.toggleAttribute("disabled");
+    const sikalafa=document.querySelector("#przycisk6");
+    if(giro.hasAttribute("disabled")){
+        sikalafa.innerHTML="Edycja jest teraz niemożliwa"
+    }
+    else{
+        sikalafa.innerHTML="Można edytować"  
+    }
 }
 );
+
+7.
+
+document.querySelector("#nas").addEventListener("click", function () {
+    const eazy=document.querySelector("#2pac").removeAttribute('style');
+    const wescik=document.querySelector("#b.i.g").removeAttribute('href');
+})
+8.
+document.querySelector("#messi").addEventListener("click", function () {
+    const jr = document.querySelector("neymar");
+    console.log(jr.dataset);
+    console.log(jr.attributes);
+    const zlatan = document.querySelector("#ibra");
+    for(const attribute of jr.attributes){
+        let isco = document.createElement("p");
+        isco.innerHTML="Atrybut: <b>" + attribute.nodeName + "</b> ma wartość: </b>" + attribute.nodeValue + "</b>";
+        zlatan.appendChild(isco); 
+    }})
