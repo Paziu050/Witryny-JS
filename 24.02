@@ -47,7 +47,7 @@ function(){
 })
 
 6.
-document.querySelector("#ford").addEventListener("click", function () {
+document.querySelector("#przycisk6").addEventListener("click", function () {
     const giro = document.querySelector("#inpucik");
     giro.toggleAttribute("disabled");
     const sikalafa=document.querySelector("#przycisk6");
@@ -62,18 +62,40 @@ document.querySelector("#ford").addEventListener("click", function () {
 
 7.
 
-document.querySelector("#nas").addEventListener("click", function () {
-    const eazy=document.querySelector("#2pac").removeAttribute('style');
-    const wescik=document.querySelector("#b.i.g").removeAttribute('href');
+document.querySelector("#remove-attribute-button").addEventListener("click", function () {
+    document.querySelector("#remove-attribute-element").removeAttribute('style');
+    document.querySelector("#remove-attribute-container").querySelector("a").removeAttribute('href');
+    
 })
 8.
-document.querySelector("#messi").addEventListener("click", function () {
-    const jr = document.querySelector("neymar");
-    console.log(jr.dataset);
-    console.log(jr.attributes);
-    const zlatan = document.querySelector("#ibra");
-    for(const attribute of jr.attributes){
-        let isco = document.createElement("p");
-        isco.innerHTML="Atrybut: <b>" + attribute.nodeName + "</b> ma wartość: </b>" + attribute.nodeValue + "</b>";
-        zlatan.appendChild(isco); 
-    }})
+document.querySelector("#dataset-attributes-button").addEventListener("click",
+function () {
+    const datasetAttributesElement = document.querySelector("#dataset-attributes-element");
+    console.log(datasetAttributesElement.dataset);
+    console.log(datasetAttributesElement.attributes);
+
+    const datasetAttributesContainer = document.querySelector("#dataset-attributes-container");
+    for (const attribute of datasetAttributesElement.attributes){
+        let para = document.createElement("p");
+        para.innerHTML = "Atrybut: <b>" + attribute.nodeName
+        + "</b> ma wartość: </b>" + attribute.nodeValue + "</b>";
+        datasetAttributesContainer.appendChild(para);
+    }
+})
+
+9.
+
+  document.querySelector("#przyciskV").addEventListener("click",
+  function(){
+    let letters = '0123456789ABCDEF'
+   let kolor1 = Math.floor(Math.random()*16); 
+   let kolor2 = Math.floor(Math.random()*16); 
+   let kolor3 = Math.floor(Math.random()*16); 
+   let kolor4 = Math.floor(Math.random()*16); 
+   let kolor5 = Math.floor(Math.random()*16); 
+   let kolor6 = Math.floor(Math.random()*16); 
+
+let kolor = '#' + letters[kolor1] + letters[kolor2] + letters[kolor3] + letters[kolor4] + letters[kolor5] + letters[kolor6];
+console.log(kolor);
+document.querySelector("#generate-color-element").style.backgroundColor = kolor;
+  })
