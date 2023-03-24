@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="24.03.js" defer></script>
+    <style>
+        table{background-color: yellow;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        #zarowka{
+            margin:0 auto;
+            display: block;
+        }
+        td{
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+<img src="1.jpg" alt="" id="zarowka">
+<table>
+    <tr>
+    <td>
+        <button id="wlacz">Włącz</button>
+    </td>
+
+    <td>
+        <button id="wylacz">wylacz</button>
+    </td>
+    </tr>
+    <tr style="background-color: white">
+        <td>
+            <input type="radio" id="essa" name="radioo" c><label for="essa">Włączony</label>
+        </td>
+        <td>
+            <input type="radio" id="eska" name="radioo"><label for="eska">Wyłączony</label>
+        </td>
+    </tr>
+    <tr>
+
+    <td colspan="2"><input type="checkbox" id="siema"><label for="siema">Włączony</label></td>
+    </tr>
+</table>
+
+</body>
+</html>
+
+
+
+
+
+
+
+document.querySelector("#wlacz").addEventListener("click", function () {
+    document.getElementById("zarowka").src="2.jpg";
+    document.getElementById("essa").checked="true";
+    document.getElementById("siema").checked="true";
+    });
+    document.querySelector("#wylacz").addEventListener("click", function () {
+        document.getElementById("zarowka").src="1.jpg";
+        document.getElementById("eska").checked="false";
+        
+    });
+    document.querySelector("#essa").addEventListener("change",
+    function () {
+        document.querySelector("#zarowka").src="2.jpg";
+    })
+    document.querySelector("#eska").addEventListener("change",
+    function () {
+        document.querySelector("#zarowka").src="1.jpg";
+    })
+
+    document.querySelector("#siema").addEventListener("change",
+    function () {
+        document.querySelector("#siema").toggleAttribute("checked");
+if ( document.querySelector("#siema").checked)
+{
+    document.querySelector("#zarowka").src="2.jpg";}
+else
+{
+    document.querySelector("#zarowka").src="1.jpg";}
+
+
+    })
