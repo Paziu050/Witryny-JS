@@ -1,0 +1,50 @@
+console.log(document.querySelector("#jeden"));
+
+document.getElementById('jeden').addEventListener('click',
+function(){
+    let bessa = Math.random() * 30 + 1;
+    let podl = Math.floor(bessa);
+    document.querySelector('#dwa').innerHTML=podl;
+    console.log(podl)
+    if (podl >= 20){
+        document.querySelector('#trzy').innerHTML="Wylosowana liczba jest większa lub równa 20";
+    } else {
+        document.querySelector('#trzy').innerHTML="";
+    }
+    if (podl % 2 == 0){
+        document.querySelector('#cztery').innerHTML="Wylosowana liczba jest liczbą parzystą"
+    }
+    else {
+        document.querySelector('#cztery').innerHTML="Wylosowana liczba jest liczbą nieparzystą";
+    }
+    if (podl <= 10){
+        document.querySelector('#piec').innerHTML="Wylosowana liczba jest w pierwszej dziesiątce";
+    }
+    else if(podl >10 && podl<=20) {
+        document.querySelector('#piec').innerHTML="Wylosowana liczba jest w drugiej dziesiątce";  
+    }
+    else if(podl >20) {
+        document.querySelector('#piec').innerHTML="Wylosowana liczba jest w trzeciej dziesiątce";  
+    }
+
+    }
+)
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="17.04.js" defer></script>
+</head>
+<body>
+    <button id="jeden">Generuj losową liczbę całkowitą z zakresu od 1 do 30 włącznie</button>
+    <h1 id="dwa"></h1>
+    <h2 id="trzy"></h2>
+    <h3 id="cztery"></h3>
+    <h4 id="piec"></h4>
+</body>
+</html>
