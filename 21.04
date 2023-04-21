@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="21.04.js" defer></script>
+    <style>
+        .h1{
+            border: 4px;
+            border-color: navy;
+            text-align: center;
+            border: solid;
+        }
+        .h3{
+            text-align: center;
+            border-bottom: 2px dashed pink;
+            border-top: 2px dashed pink;
+            font-family: cursive;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="jede" class="h1"></h1>
+    <h3 id="es" class="h3"></h3>
+</body>
+</html>
+
+let miesia = Math.random() * 15 + 1;
+let miesiac = Math.floor(miesia);
+document.querySelector('#jede').innerHTML=miesiac;
+
+console.log(miesiac);
+switch (miesiac) {
+    case 1:
+        case 2:
+            case 3:
+        document.querySelector('#es').innerText="I Kwartał";
+        break;
+    case 4:
+        case 5:
+            case 6:
+            document.querySelector('#es').innerText="II Kwartał";
+            break;
+    case 7:
+        case 8:
+            case 9:
+                document.querySelector('#es').innerText="III Kwartał";
+                break;
+                case 10:
+                    case 11:
+                        case 12:
+                            document.querySelector('#es').innerText="IV Kwartał";
+                            break;
+        default:
+            document.querySelector('#es').innerText="Błędny numer miesiąca";
+            
+
+}
