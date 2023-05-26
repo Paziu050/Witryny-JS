@@ -1,0 +1,43 @@
+/*let i =1;
+while(i<=10){
+    console.log({i});
+    
+    i++;
+}
+*/
+const kolumn = document.querySelector("#kol");
+const wiersz = document.querySelector("#wier");
+const guzior = document.querySelector("#gen");
+const tabela = document.querySelector("#tab");
+
+
+guzior.addEventListener("click", function () {
+    tabela.innerHTML = '';
+    const wierinput = parseInt(wiersz.value);
+    console.log("liczba wierszy = " + wierinput);
+    let w = 1;
+
+    tabela.innerHTML = '';
+    const kolinput = parseInt(kolumn.value);
+    console.log("liczba kolumn = " + kolinput);
+    let k = 1;
+
+    while (w <= wierinput) {
+
+        const wierszor = document.createElement("tr");
+        //console.log(wierszor)
+        while (k <= kolinput) {
+            //wierszor.innerText = w
+
+            const kolumnior = document.createElement("td");
+            kolumnior.innerText = k +'|'+w;
+            wierszor.appendChild(kolumnior);
+
+            k++;
+        };
+        tabela.appendChild(wierszor);
+        k = 1;
+        w++;
+
+    }
+});
