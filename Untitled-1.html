@@ -2,31 +2,75 @@
 <html lang="pl">
 
 <head>
-  <link rel="stylesheet" href="style.css">
-
-    <link rel="stylesheet" href="style.css">
-  <title>2 kolumny</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="" />
-  <style>
-  
-    @media screen and (orientation: landscape) {
-        body{
-      background-image: url('1.jfif');
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSF</title>
+    <style>
+        * {
+            box-sizing: border-box;
         }
-      }
-      @media screen and (orientation: portrait) {
-        body{
-      background-image: url('2.jpg');
-        }
-      }
 
+        .column {
+            
+            float: left;
+            padding: 10px;
+            height: 30px;
+           
+            
+        }
+        .column:hover{
+             
+            float: left;
+            padding: 10px;
+            height: 30px;
+          ;
+            background-color: gray;
+        }
+        .row{
+            width: 100%;
+            background-color: black;
+        }
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .link{
+            text-decoration: none;
+            color: antiquewhite;
+        }
+
+        
+            @media screen and (max-width: 600px) {
+                .column {
+                    width: 100%;
+                    text-align: center;
+                }
+
+
+            }
+
+        
     </style>
 </head>
+
 <body>
+  <h2>MENU ZMIENIAJĄCE SWOJĄ SZEROKOŚĆ</h2>
+    <div class="row">
+        <div class="column" >
+            <a class="link" href="" >Link 1</a>
+            
+        </div>
+        <div class="column" >
+            <a class="link" href="">Link 2</a>
+        </div>
+        <div class="column" >
+            <a class="link" href="">Link 3</a>
+        </div>
+        
 
-
-  </body>
+    </div>
+</body>
 
 </html>
